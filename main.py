@@ -15,6 +15,7 @@ from src.routers.plano_acao_especial import pa_router
 from src.routers.empenho_especial import em_router
 from src.routers.documento_habil import dh_router
 from src.routers.ordem_pagamento_especial import op_router
+from src.routers.historico_pagamento_especial import hist_router
 
 # Configuração do logger
 logging.basicConfig(level=logging.INFO)
@@ -53,6 +54,7 @@ app.include_router(pa_router)
 app.include_router(em_router)
 app.include_router(dh_router)
 app.include_router(op_router)
+app.include_router(hist_router)
 
 
 @app.get("/docs", include_in_schema=False)

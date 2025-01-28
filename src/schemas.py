@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field
 from fastapi import Query
 from typing import List, Optional
-from datetime import datetime as dt
+import datetime as dt
 
 class ProgramaEspecialResponse(BaseModel):  
     model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
@@ -184,6 +184,26 @@ class PaginatedOrdemPagamentoOrdemBancariaEspecialResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True) 
 
     data: List[OrdemPagamentoOrdemBancariaEspecialResponse]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+
+
+class HistoricoPagamentoEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True) 
+
+    id_historico_op_ob: int
+    data_hora_historico_op: Optional[dt.datetime]
+    historico_situacao_op: Optional[int]
+    descricao_historico_situacao_op: Optional[int]
+    id_op_ob: Optional[int]
+
+
+class PaginatedHistoricoPagamentoEspecial(BaseModel):
+    model_config = ConfigDict(from_attributes=True) 
+
+    data: List[HistoricoPagamentoEspecialResponse]
     total_pages: int
     total_items: int
     page_number: int

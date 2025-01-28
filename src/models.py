@@ -145,4 +145,14 @@ class OrdemPagamentoOrdemBancariaEspecial(BaseModel, table=True):
     numero_ordem_lancamento: str
     data_assinatura_ordenador_despesa_ob: dt.date
     data_assinatura_gestor_financeiro_ob: dt.date
-    id_dh: int = Field(foreign_key=f"{db_schema}.documento_habil_especial.id_dh")  
+    id_dh: int = Field(foreign_key=f"{db_schema}.documento_habil_especial.id_dh")
+
+
+class HistoricoPagamentoEspecial(BaseModel, table=True):
+    __tablename__ = "historico_pagamento_especial"
+
+    id_historico_op_ob: int = Field(primary_key=True)
+    data_hora_historico_op: dt.datetime
+    historico_situacao_op: int
+    descricao_historico_situacao_op: str
+    id_op_ob: int = Field(foreign_key=f"{db_schema}.ordem_pagamento_ordem_bancaria_especial.id_op_ob")
