@@ -156,3 +156,12 @@ class HistoricoPagamentoEspecial(BaseModel, table=True):
     historico_situacao_op: int
     descricao_historico_situacao_op: str
     id_op_ob: int = Field(foreign_key=f"{db_schema}.ordem_pagamento_ordem_bancaria_especial.id_op_ob")
+
+
+class RelatorioGestaoEspecial(BaseModel, table=True):
+    __tablename__ = "relatorio_gestao_especial"
+
+    id_relatorio_gestao: int = Field(primary_key=True)
+    situacao_relatorio_gestao: str
+    parecer_relatorio_gestao: str
+    id_plano_acao: int = Field(foreign_key=f"{db_schema}.plano_acao_especial.id_plano_acao")

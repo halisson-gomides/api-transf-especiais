@@ -9,7 +9,7 @@
 		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
 		"ghcr.io/devcontainers-extra/features/zsh-plugins:0": {}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -19,7 +19,7 @@
 	"forwardPorts": [8000, 5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install --user -r requirements.txt"
+	"postCreateCommand": "python -m pip install --upgrade pip && pip install --no-cache-dir --user -r requirements.txt"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

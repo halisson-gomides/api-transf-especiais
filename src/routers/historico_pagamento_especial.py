@@ -1,10 +1,10 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
 from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedHistoricoPagamentoEspecial
-from datetime import datetime
+from src.schemas import PaginatedHistoricoPagamentoEspecialResponse
+from datetime import date
 from typing import Optional
 from appconfig import Settings
 
@@ -15,11 +15,11 @@ config = Settings()
                 status_code=status.HTTP_200_OK,
                 description="Retorna uma Lista Paginada do histórico de pagamentos.",
                 response_description="Lista Paginada de Histório de Pagamentos",
-                response_model=PaginatedHistoricoPagamentoEspecial
+                response_model=PaginatedHistoricoPagamentoEspecialResponse
                 )
 async def consulta_historico_pagamento_especial(
     id_historico_op_ob : Optional[int] = Query(None, description="Identificador Único do Histórico de Pagamento"),
-    data_hora_historico_op : Optional[str] = Query(None, description="Data e Hora do Histórico de Pagamento<br/>Ex.: 2024-12-11T12:00:00", pattern=r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$", examples=["2024-12-11T12:00:00"]),
+    data_hora_historico_op : Optional[str] = Query(None, description="Data do Histórico de Pagamento<br/>Ex.: 2024-12-11", pattern=r"^\d{4}-\d{2}-\d{2}$", examples=["2024-12-11"]),
     historico_situacao_op : Optional[int] = Query(None, description="Código da Situação da Ordem de Pagamento/Bancária"),
     descricao_historico_situacao_op : Optional[str] = Query(None, description="Descrição da Situação da Ordem de Pagamento/Bancária"),
     id_op_ob : Optional[int] = Query(None, description="Identificador Único da Ordem de Pagamento e Ordem Bancária (OP/OB)"),
@@ -39,19 +39,19 @@ async def consulta_historico_pagamento_especial(
         query = select(models.HistoricoPagamentoEspecial).where(
             and_(
                 models.HistoricoPagamentoEspecial.id_historico_op_ob == id_historico_op_ob if id_historico_op_ob else True,
-                models.HistoricoPagamentoEspecial.data_hora_historico_op == datetime.fromisoformat(data_hora_historico_op) if data_hora_historico_op else True,
+                cast(models.HistoricoPagamentoEspecial.data_hora_historico_op, Date) == date.fromisoformat(data_hora_historico_op) if data_hora_historico_op else True,
                 models.HistoricoPagamentoEspecial.historico_situacao_op == historico_situacao_op if historico_situacao_op else True,
-                models.HistoricoPagamentoEspecial.descricao_historico_situacao_op.ilike("%{descricao_historico_situacao_op}%") if descricao_historico_situacao_op else True,
+                models.HistoricoPagamentoEspecial.descricao_historico_situacao_op.ilike(f"%{descricao_historico_situacao_op}%") if descricao_historico_situacao_op else True,
                 models.HistoricoPagamentoEspecial.id_op_ob == id_op_ob if id_op_ob else True
             )
         )
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedHistoricoPagamentoEspecial, 
+                                          response_schema=PaginatedHistoricoPagamentoEspecialResponse, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
     
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                            detail=f"Erro ao consultar Histórico de Pagamento: {str(e)}")
+                            detail=f"Erro ao consultar Histórico de Pagamento: {e.__repr__()}")

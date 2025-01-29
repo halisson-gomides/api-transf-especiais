@@ -196,14 +196,33 @@ class HistoricoPagamentoEspecialResponse(BaseModel):
     id_historico_op_ob: int
     data_hora_historico_op: Optional[dt.datetime]
     historico_situacao_op: Optional[int]
-    descricao_historico_situacao_op: Optional[int]
+    descricao_historico_situacao_op: Optional[str]
     id_op_ob: Optional[int]
 
 
-class PaginatedHistoricoPagamentoEspecial(BaseModel):
+class PaginatedHistoricoPagamentoEspecialResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True) 
 
     data: List[HistoricoPagamentoEspecialResponse]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+
+
+class RelatorioGestaoEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True) 
+
+    id_relatorio_gestao: int
+    situacao_relatorio_gestao: Optional[str]    
+    parecer_relatorio_gestao: Optional[str]
+    id_plano_acao: Optional[int]
+
+
+class PaginatedRelatorioGestaoEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True) 
+
+    data: List[RelatorioGestaoEspecialResponse]
     total_pages: int
     total_items: int
     page_number: int
