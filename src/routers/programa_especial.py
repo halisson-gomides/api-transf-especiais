@@ -3,6 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlmodel import select, and_
 from src import models
 from src.utils import get_session, get_paginated_data
+from src.cache import cache
 from src.schemas import PaginatedProgramaEspecialResponse
 from typing import Optional
 from appconfig import Settings
@@ -18,6 +19,7 @@ config = Settings()
                 response_description="Lista Paginada de Programa Especial",
                 response_model=PaginatedProgramaEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_programa_especial(
     id_programa: Optional[int] = Query(None, description="Identificador Único do Programa"),
     ano_programa: Optional[int] = Query(None, description="Ano do Programa"),

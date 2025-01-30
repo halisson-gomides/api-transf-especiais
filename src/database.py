@@ -38,6 +38,7 @@ class Database:
             expire_on_commit=False
         )
 
-    async def get_session(self) -> AsyncGenerator[AsyncSession, None]:
+    async def get_db_session(self) -> AsyncGenerator[AsyncSession, None]:
         async with self.async_session_maker() as session:
             yield session
+

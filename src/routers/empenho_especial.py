@@ -7,6 +7,7 @@ from src.schemas import PaginatedEmpenhoEspecialResponse
 from typing import Optional
 from datetime import date
 from appconfig import Settings
+from src.cache import cache
 
 em_router = APIRouter(tags=["Empenho Especial"])
 config = Settings()
@@ -17,6 +18,7 @@ config = Settings()
                 response_description="Lista Paginada de Empenhos Especiais",
                 response_model=PaginatedEmpenhoEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_empenho_especial(
     id_empenho: Optional[int] = Query(None, description="Identificador Único da Nota de Empenho (NE)"),
     id_minuta_empenho: Optional[str] = Query(None, description="Número da Minuta gerado para Nota de Empenho, utiliza o Número Interno e Ano de Emissão"),

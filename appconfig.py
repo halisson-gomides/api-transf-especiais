@@ -8,6 +8,10 @@ class Settings(BaseSettings):
     )
 
     DATABASE_URL: str
+    CACHE_SERVER_URL: str    
+    CACHE_SERVER_SECRET: str
+    CACHE_TTL: str = "30m"
+    CACHE_NAMESPACE:str = "cache-especiais"
     APP_NAME: str
     APP_DESCRIPTION: str
     APP_TAGS: list = [

@@ -3,11 +3,12 @@ from typing import AsyncGenerator
 from sqlmodel import select, func
 from math import ceil
 
-# Dependency to inject sessions
+# Dependency to inject db sessions
 async def get_session() -> AsyncGenerator[AsyncSession, None]:
     from main import db
-    async for session in db.get_session():
+    async for session in db.get_db_session():
         yield session
+
 
 async def get_paginated_data(query: select, dbsession: AsyncSession, response_schema, current_page: int = 1, records_per_page: int = 10):
     # Prepare the query for execution

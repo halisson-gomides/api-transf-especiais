@@ -6,8 +6,13 @@ from fastapi.openapi.docs import get_swagger_ui_html
 from fastapi.staticfiles import StaticFiles
 import logging
 from appconfig import Settings
+from cashews.contrib.fastapi import (
+    CacheEtagMiddleware,
+    CacheRequestControlMiddleware    
+)
 
 from src.database import Database
+from src.cache import setup_cache
 
 # Importando Rotas
 from src.routers.programa_especial import prg_router
@@ -22,7 +27,8 @@ from src.routers.relatorio_gestao_especial import rg_router
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize the database instance
+# Initialize instances
+settings = Settings()
 db = Database()
 
 @asynccontextmanager
@@ -30,17 +36,19 @@ async def lifespan(app: FastAPI):
     # load before the app starts
     logger.info("Iniciando aplicação...")
     try:
-        await db.init_db()
-        logger.info("Banco de dados inicializado com sucesso!")
+        # Inicializa o Banco de Dados
+        await db.init_db()        
+        # Configure o cache
+        # setup_cache(settings)
+        logger.info("Aplicação iniciada com sucesso!")
     except Exception as e:
-        logger.error(f"Erro ao inicializar banco de dados: {str(e)}")
+        logger.error(f"Erro na inicialização: {str(e)}")
         raise
     yield
     # load after the app has finished
     # ...
     
 
-settings = Settings()
 app = FastAPI(lifespan=lifespan, 
               docs_url=None, 
               title=settings.APP_NAME, 
@@ -48,6 +56,12 @@ app = FastAPI(lifespan=lifespan,
               openapi_tags=settings.APP_TAGS,
               default_response_class=ORJSONResponse)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Incluindo Middlewares
+app.add_middleware(CacheEtagMiddleware)
+app.add_middleware(CacheRequestControlMiddleware)
+
+setup_cache(settings)
 
 # Incluindo Rotas
 app.include_router(prg_router)
@@ -71,3 +85,6 @@ async def swagger_ui_html():
 @app.get("/", include_in_schema=False)
 async def docs_redirect():
     return RedirectResponse(url='/docs')
+
+# Run in terminal
+# uvicorn main:app --host 0.0.0.0 --port 8000 --reload
