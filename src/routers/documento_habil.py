@@ -7,6 +7,7 @@ from src.schemas import PaginatedDocumentoHabilEspecialResponse
 from datetime import date
 from typing import Optional
 from appconfig import Settings
+from src.cache import cache
 
 dh_router = APIRouter(tags=["Documento Hábil Especial"])
 config = Settings()
@@ -17,6 +18,7 @@ config = Settings()
                 response_description="Lista Paginada de Documentos hábeis Especiais",
                 response_model=PaginatedDocumentoHabilEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_documento_habil_especial(
     id_dh: Optional[int] = Query(None, description="Identificador Único do Documento Hábil (DH)"),
     id_minuta_documento_habil: Optional[str] = Query(None, description="Padrao de Minuta de DH do tipo 2020MDH000001"),

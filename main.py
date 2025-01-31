@@ -39,7 +39,7 @@ async def lifespan(app: FastAPI):
         # Inicializa o Banco de Dados
         await db.init_db()        
         # Configure o cache
-        # setup_cache(settings)
+        setup_cache(settings)
         logger.info("Aplicação iniciada com sucesso!")
     except Exception as e:
         logger.error(f"Erro na inicialização: {str(e)}")
@@ -61,7 +61,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 app.add_middleware(CacheEtagMiddleware)
 app.add_middleware(CacheRequestControlMiddleware)
 
-setup_cache(settings)
+# setup_cache(settings)
 
 # Incluindo Rotas
 app.include_router(prg_router)

@@ -7,6 +7,7 @@ from src.schemas import PaginatedHistoricoPagamentoEspecialResponse
 from datetime import date
 from typing import Optional
 from appconfig import Settings
+from src.cache import cache
 
 hist_router = APIRouter(tags=["Histórico de Pagamento Especial"])
 config = Settings()
@@ -17,6 +18,7 @@ config = Settings()
                 response_description="Lista Paginada de Histório de Pagamentos",
                 response_model=PaginatedHistoricoPagamentoEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_historico_pagamento_especial(
     id_historico_op_ob : Optional[int] = Query(None, description="Identificador Único do Histórico de Pagamento"),
     data_hora_historico_op : Optional[str] = Query(None, description="Data do Histórico de Pagamento<br/>Ex.: 2024-12-11", pattern=r"^\d{4}-\d{2}-\d{2}$", examples=["2024-12-11"]),

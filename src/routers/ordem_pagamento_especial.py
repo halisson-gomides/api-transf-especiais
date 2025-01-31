@@ -7,6 +7,7 @@ from src.schemas import PaginatedOrdemPagamentoOrdemBancariaEspecialResponse
 from datetime import date
 from typing import Optional
 from appconfig import Settings
+from src.cache import cache
 
 op_router = APIRouter(tags=["Ordem de pagamento e Ordem bancária Especial"])
 config = Settings()
@@ -17,6 +18,7 @@ config = Settings()
                 response_description="Lista Paginada de Ordens de Pagamento e Ordens Bancárias Especiais",
                 response_model=PaginatedOrdemPagamentoOrdemBancariaEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_ordem_pagamento_ordem_bancaria_especial(
     id_op_ob : Optional[int] = Query(None, description="Identificador Único da Ordem de Pagamento e Ordem Bancária (OP/OB)"),
     data_emissao_op : Optional[str] = Query(None, description="Data de Emissão da Ordem de Pagamento (OP)<br/>Ex.: 2024-12-11", pattern=r"^\d{4}-\d{2}-\d{2}$", examples=["2024-12-11"]),

@@ -6,6 +6,7 @@ from src.utils import get_session, get_paginated_data
 from src.schemas import PaginatedPlanoAcaoEspecialResponse
 from typing import Optional
 from appconfig import Settings
+from src.cache import cache
 
 pa_router = APIRouter(tags=["Plano de Ação Especial"])
 config = Settings()
@@ -17,6 +18,7 @@ config = Settings()
                 response_description="Lista Paginada de Planos de Ação Especiais",
                 response_model=PaginatedPlanoAcaoEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_plano_acao_especial(
     id_plano_acao: Optional[int] = Query(None, description="Identificador Único do Plano de Ação (PA)"),
     codigo_plano_acao: Optional[str] = Query(None, description="Código do Programa concatenado com o ID do Plano de Ação"),

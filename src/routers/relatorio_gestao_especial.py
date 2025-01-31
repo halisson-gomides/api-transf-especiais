@@ -6,6 +6,7 @@ from src.utils import get_session, get_paginated_data
 from src.schemas import PaginatedRelatorioGestaoEspecialResponse
 from typing import Optional
 from appconfig import Settings
+from src.cache import cache
 
 rg_router = APIRouter(tags=["Relatório de Gestão Especial"])
 config = Settings()
@@ -16,6 +17,7 @@ config = Settings()
                 response_description="Lista Paginada com dados de Relatórios de Gestão Especial",
                 response_model=PaginatedRelatorioGestaoEspecialResponse
                 )
+@cache(ttl=config.CACHE_TTL)
 async def consulta_relatorio_gestao_especial(
     id_relatorio_gestao : Optional[int] = Query(None, description="Identificador Único do Relatório de Gestão"),
     situacao_relatorio_gestao : Optional[str] = Query(None, description="Situação do Relatório de Gestão"),
