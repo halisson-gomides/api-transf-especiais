@@ -22,6 +22,10 @@ from src.routers.documento_habil import dh_router
 from src.routers.ordem_pagamento_especial import op_router
 from src.routers.historico_pagamento_especial import hist_router
 from src.routers.relatorio_gestao_especial import rg_router
+from src.routers.plano_trabalho_especial import pt_router
+from src.routers.executor_especial import ex_router
+from src.routers.meta_especial import me_router
+from src.routers.finalidade_especial import fe_router
 
 # Configuração do logger
 logging.basicConfig(level=logging.INFO)
@@ -54,7 +58,8 @@ app = FastAPI(lifespan=lifespan,
               title=settings.APP_NAME, 
               description=settings.APP_DESCRIPTION,
               openapi_tags=settings.APP_TAGS,
-              default_response_class=ORJSONResponse)
+              default_response_class=ORJSONResponse,              
+              swagger_ui_parameters={"defaultModelExpandDepth": -1})
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Incluindo Middlewares
@@ -71,6 +76,10 @@ app.include_router(dh_router)
 app.include_router(op_router)
 app.include_router(hist_router)
 app.include_router(rg_router)
+app.include_router(pt_router)
+app.include_router(ex_router)
+app.include_router(me_router)
+app.include_router(fe_router)
 
 
 @app.get("/docs", include_in_schema=False)

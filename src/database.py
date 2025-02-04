@@ -22,7 +22,9 @@ class Database:
         self.engine = create_async_engine(
             settings.DATABASE_URL,  # MUST be postgresql+asyncpg://...
             future=True,
-            pool_pre_ping=True
+            pool_pre_ping=True,
+            pool_size=10,
+            max_overflow=20
         )
         
         # Test connection

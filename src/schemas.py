@@ -41,7 +41,7 @@ class PaginatedProgramaEspecialResponse(BaseModel):
 
 
 class PlanoAcaoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
+    model_config = ConfigDict(from_attributes=True, extra="forbid") 
 
     id_plano_acao: int
     codigo_plano_acao: Optional[str]
@@ -83,7 +83,7 @@ class PaginatedPlanoAcaoEspecialResponse(BaseModel):
 
 
 class EmpenhoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True)
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid")
 
     id_empenho: int
     id_minuta_empenho: Optional[str]
@@ -125,7 +125,7 @@ class PaginatedEmpenhoEspecialResponse(BaseModel):
 
 
 class DocumentoHabilEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True) 
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
 
     id_dh: int
     id_minuta_documento_habil: Optional[str]
@@ -163,7 +163,7 @@ class PaginatedDocumentoHabilEspecialResponse(BaseModel):
 
 
 class OrdemPagamentoOrdemBancariaEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True) 
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
 
     id_op_ob : int
     data_emissao_op : Optional[dt.date]
@@ -191,7 +191,7 @@ class PaginatedOrdemPagamentoOrdemBancariaEspecialResponse(BaseModel):
 
 
 class HistoricoPagamentoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True) 
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
 
     id_historico_op_ob: int
     data_hora_historico_op: Optional[dt.datetime]
@@ -211,7 +211,7 @@ class PaginatedHistoricoPagamentoEspecialResponse(BaseModel):
 
 
 class RelatorioGestaoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True) 
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
 
     id_relatorio_gestao: int
     situacao_relatorio_gestao: Optional[str]    
@@ -223,6 +223,105 @@ class PaginatedRelatorioGestaoEspecialResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True) 
 
     data: List[RelatorioGestaoEspecialResponse]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+
+
+class PlanoTrabalhoEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
+
+    id_plano_trabalho: int
+    situacao_plano_trabalho: Optional[str]
+    ind_orcamento_proprio_plano_trabalho: Optional[str]
+    data_inicio_execucao_plano_trabalho: Optional[dt.datetime]
+    data_fim_execucao_plano_trabalho: Optional[dt.datetime]
+    prazo_execucao_meses_plano_trabalho: Optional[int]
+    id_plano_acao: Optional[int]
+    classificacao_orcamentaria_pt: Optional[str]
+    ind_justificativa_prorrogacao_atraso_pt: Optional[bool]
+    ind_justificativa_prorrogacao_paralizacao_pt: Optional[bool]
+    justificativa_prorrogacao_pt: Optional[str]
+
+
+class PaginatedPlanoTrabalhoEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True) 
+
+    data: List[PlanoTrabalhoEspecialResponse]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+
+
+class ExecutorEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid")
+
+    id_plano_acao: Optional[int]
+    id_executor: int
+    cnpj_executor: Optional[str]
+    nome_executor: Optional[str]
+    objeto_executor: Optional[str]
+    vl_custeio_executor: Optional[float]
+    vl_investimento_executor: Optional[float]
+
+
+class PaginatedExecutorEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True) 
+
+    data: List[ExecutorEspecialResponse]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+
+
+class MetaEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid")
+
+    id_executor: Optional[int]
+    id_meta: int
+    sequencial_meta: Optional[int]
+    nome_meta: Optional[str]
+    desc_meta: Optional[str]
+    un_medida_meta: Optional[str]
+    qt_uniade_meta: Optional[float]
+    vl_custeio_emenda_especial_meta: Optional[float]
+    vl_investimento_emenda_especial_meta: Optional[float]
+    vl_custeio_recursos_proprios_meta: Optional[float]
+    vl_investimento_recursos_proprios_meta: Optional[float]
+    vl_custeio_rendimento_meta: Optional[float]
+    vl_investimento_rendimento_meta: Optional[float]
+    vl_custeio_doacao_meta: Optional[float]
+    vl_investimento_doacao_meta: Optional[float]
+    qt_meses_meta: Optional[int]
+
+
+class PaginatedMetaEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True) 
+
+    data: List[MetaEspecialResponse]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+
+
+class FinalidadeEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid")
+
+    id_executor: int
+    cd_area_politica_publica_tipo_pt: Optional[int]
+    area_politica_publica_tipo_pt: Optional[str]
+    cd_area_politica_publica_pt: Optional[int]
+    area_politica_publica_pt: Optional[str]
+
+
+class PaginatedFinalidadeEspecialResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True) 
+
+    data: List[FinalidadeEspecialResponse]
     total_pages: int
     total_items: int
     page_number: int

@@ -8,10 +8,8 @@ class Settings(BaseSettings):
     )
 
     DATABASE_URL: str
-    CACHE_SERVER_URL: str    
-    CACHE_SERVER_SECRET: str
-    CACHE_TTL: str = "30m"
-    CACHE_NAMESPACE:str = "cache-especiais"
+    CACHE_SERVER_URL: str        
+    CACHE_TTL: str = "30m"    
     APP_NAME: str
     APP_DESCRIPTION: str
     APP_TAGS: list = [
@@ -43,6 +41,22 @@ class Settings(BaseSettings):
             "name": "Relatório de Gestão Especial",
             "description": "Dados relativos a relatório de gestão especiais.",            
         },
+        {
+            "name": "Plano de Trabalho Especial",
+            "description": "Dados relativos a planos de trabalho especiais.",            
+        },
+        {
+            "name": "Executor Especial",
+            "description": "Dados relativos a executores especiais.",            
+        },
+        {
+            "name": "Meta Especial",
+            "description": "Dados relativos a metas especiais.",            
+        },
+        {
+            "name": "Finalidade Especial",
+            "description": "Dados relativos a finalidades especiais.",            
+        },
     ]
     DEFAULT_PAGE_SIZE: int = 10
-    MAX_PAGE_SIZE: int = 100
+    MAX_PAGE_SIZE: int = 200

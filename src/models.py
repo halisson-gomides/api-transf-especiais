@@ -165,3 +165,62 @@ class RelatorioGestaoEspecial(BaseModel, table=True):
     situacao_relatorio_gestao: str
     parecer_relatorio_gestao: str
     id_plano_acao: int = Field(foreign_key=f"{db_schema}.plano_acao_especial.id_plano_acao")
+
+
+class PlanoTrabalhoEspecial(BaseModel, table=True):
+    __tablename__ = "plano_trabalho_especial"
+
+    id_plano_trabalho: int = Field(primary_key=True)
+    situacao_plano_trabalho: str
+    ind_orcamento_proprio_plano_trabalho: str
+    data_inicio_execucao_plano_trabalho: dt.datetime
+    data_fim_execucao_plano_trabalho: dt.datetime
+    prazo_execucao_meses_plano_trabalho: int
+    id_plano_acao: int = Field(foreign_key=f"{db_schema}.plano_acao_especial.id_plano_acao")
+    classificacao_orcamentaria_pt: str
+    ind_justificativa_prorrogacao_atraso_pt: bool
+    ind_justificativa_prorrogacao_paralizacao_pt: bool
+    justificativa_prorrogacao_pt: str
+
+
+class ExecutorEspecial(BaseModel, table=True):
+    __tablename__ = "executor_especial"
+
+    id_plano_acao: int = Field(foreign_key=f"{db_schema}.plano_acao_especial.id_plano_acao")
+    id_executor: int = Field(primary_key=True)
+    cnpj_executor: str
+    nome_executor: str
+    objeto_executor: str
+    vl_custeio_executor: float
+    vl_investimento_executor: float
+
+
+class MetaEspecial(BaseModel, table=True):
+    __tablename__ = "meta_especial"
+
+    id_executor: int = Field(foreign_key=f"{db_schema}.executor_especial.id_executor")
+    id_meta: int = Field(primary_key=True)
+    sequencial_meta: int
+    nome_meta: str
+    desc_meta: str
+    un_medida_meta: str
+    qt_uniade_meta: float
+    vl_custeio_emenda_especial_meta: float
+    vl_investimento_emenda_especial_meta: float
+    vl_custeio_recursos_proprios_meta: float
+    vl_investimento_recursos_proprios_meta: float
+    vl_custeio_rendimento_meta: float
+    vl_investimento_rendimento_meta: float
+    vl_custeio_doacao_meta: float
+    vl_investimento_doacao_meta: float
+    qt_meses_meta: int
+
+
+class FinalidadeEspecial(BaseModel, table=True):
+    __tablename__ = "finalidade_especial"
+
+    id_executor: int = Field(foreign_key=f"{db_schema}.executor_especial.id_executor", primary_key=True)
+    cd_area_politica_publica_tipo_pt: int = Field(default=None, primary_key=True)
+    area_politica_publica_tipo_pt: str
+    cd_area_politica_publica_pt: int = Field(default=None, primary_key=True)
+    area_politica_publica_pt: str
