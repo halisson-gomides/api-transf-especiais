@@ -54,8 +54,8 @@ async def consulta_plano_trabalho_especial(
                models.PlanoTrabalhoEspecial.prazo_execucao_meses_plano_trabalho == prazo_execucao_meses_plano_trabalho if prazo_execucao_meses_plano_trabalho else True,
                models.PlanoTrabalhoEspecial.id_plano_acao == id_plano_acao if id_plano_acao else True,
                models.PlanoTrabalhoEspecial.classificacao_orcamentaria_pt.ilike(f"%{classificacao_orcamentaria_pt}%") if classificacao_orcamentaria_pt else True,
-               models.PlanoTrabalhoEspecial.ind_justificativa_prorrogacao_atraso_pt == ind_justificativa_prorrogacao_atraso_pt if ind_justificativa_prorrogacao_atraso_pt else True,
-               models.PlanoTrabalhoEspecial.ind_justificativa_prorrogacao_paralizacao_pt == ind_justificativa_prorrogacao_paralizacao_pt if ind_justificativa_prorrogacao_paralizacao_pt else True,
+               models.PlanoTrabalhoEspecial.ind_justificativa_prorrogacao_atraso_pt == ind_justificativa_prorrogacao_atraso_pt if ind_justificativa_prorrogacao_atraso_pt is not None else True,
+               models.PlanoTrabalhoEspecial.ind_justificativa_prorrogacao_paralizacao_pt == ind_justificativa_prorrogacao_paralizacao_pt if ind_justificativa_prorrogacao_paralizacao_pt is not None else True,
                models.PlanoTrabalhoEspecial.justificativa_prorrogacao_pt.ilike(f"%{justificativa_prorrogacao_pt}%") if justificativa_prorrogacao_pt else True
             )
         )
