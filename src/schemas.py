@@ -1,7 +1,19 @@
 from pydantic import BaseModel, ConfigDict, Field
 from fastapi import Query
-from typing import List, Optional
+from typing import List, Optional, Any
 import datetime as dt
+
+# Template para paginacao
+class PaginatedResponseTemplate(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+    
+    data: List[Any]
+    total_pages: int
+    total_items: int
+    page_number: int
+    page_size: int
+# --------------------------------------
+
 
 class ProgramaEspecialResponse(BaseModel):  
     model_config = ConfigDict(from_attributes=True, arbitrary_types_allowed=True, extra="forbid") 
@@ -30,14 +42,9 @@ class ProgramaEspecialResponse(BaseModel):
     valor_disponibilidade_atual_programa: Optional[float]
 
 
-class PaginatedProgramaEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
+class PaginatedProgramaEspecialResponse(PaginatedResponseTemplate):
     data: List[ProgramaEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+    
 
 
 class PlanoAcaoEspecialResponse(BaseModel):
@@ -72,14 +79,8 @@ class PlanoAcaoEspecialResponse(BaseModel):
     id_programa: Optional[int]
 
 
-class PaginatedPlanoAcaoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
-    data: List[PlanoAcaoEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+class PaginatedPlanoAcaoEspecialResponse(PaginatedResponseTemplate):
+    data: List[PlanoAcaoEspecialResponse]    
 
 
 class EmpenhoEspecialResponse(BaseModel):
@@ -114,14 +115,8 @@ class EmpenhoEspecialResponse(BaseModel):
     id_plano_acao: Optional[int]
 
 
-class PaginatedEmpenhoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
+class PaginatedEmpenhoEspecialResponse(PaginatedResponseTemplate):
     data: List[EmpenhoEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
 
 
 class DocumentoHabilEspecialResponse(BaseModel):
@@ -152,14 +147,8 @@ class DocumentoHabilEspecialResponse(BaseModel):
     id_empenho: Optional[int]
 
 
-class PaginatedDocumentoHabilEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
+class PaginatedDocumentoHabilEspecialResponse(PaginatedResponseTemplate):
     data: List[DocumentoHabilEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
 
 
 class OrdemPagamentoOrdemBancariaEspecialResponse(BaseModel):
@@ -180,14 +169,8 @@ class OrdemPagamentoOrdemBancariaEspecialResponse(BaseModel):
     id_dh : Optional[int]
 
 
-class PaginatedOrdemPagamentoOrdemBancariaEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
+class PaginatedOrdemPagamentoOrdemBancariaEspecialResponse(PaginatedResponseTemplate):
     data: List[OrdemPagamentoOrdemBancariaEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
 
 
 class HistoricoPagamentoEspecialResponse(BaseModel):
@@ -200,14 +183,8 @@ class HistoricoPagamentoEspecialResponse(BaseModel):
     id_op_ob: Optional[int]
 
 
-class PaginatedHistoricoPagamentoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
+class PaginatedHistoricoPagamentoEspecialResponse(PaginatedResponseTemplate):    
     data: List[HistoricoPagamentoEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
 
 
 class RelatorioGestaoEspecialResponse(BaseModel):
@@ -219,14 +196,8 @@ class RelatorioGestaoEspecialResponse(BaseModel):
     id_plano_acao: Optional[int]
 
 
-class PaginatedRelatorioGestaoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
-    data: List[RelatorioGestaoEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+class PaginatedRelatorioGestaoEspecialResponse(PaginatedResponseTemplate):
+    data: List[RelatorioGestaoEspecialResponse]    
 
 
 class PlanoTrabalhoEspecialResponse(BaseModel):
@@ -245,14 +216,8 @@ class PlanoTrabalhoEspecialResponse(BaseModel):
     justificativa_prorrogacao_pt: Optional[str]
 
 
-class PaginatedPlanoTrabalhoEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
-    data: List[PlanoTrabalhoEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+class PaginatedPlanoTrabalhoEspecialResponse(PaginatedResponseTemplate):
+    data: List[PlanoTrabalhoEspecialResponse]   
 
 
 class ExecutorEspecialResponse(BaseModel):
@@ -267,14 +232,8 @@ class ExecutorEspecialResponse(BaseModel):
     vl_investimento_executor: Optional[float]
 
 
-class PaginatedExecutorEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
-    data: List[ExecutorEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+class PaginatedExecutorEspecialResponse(PaginatedResponseTemplate):
+    data: List[ExecutorEspecialResponse]  
 
 
 class MetaEspecialResponse(BaseModel):
@@ -298,14 +257,8 @@ class MetaEspecialResponse(BaseModel):
     qt_meses_meta: Optional[int]
 
 
-class PaginatedMetaEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
-    data: List[MetaEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+class PaginatedMetaEspecialResponse(PaginatedResponseTemplate):
+    data: List[MetaEspecialResponse]    
 
 
 class FinalidadeEspecialResponse(BaseModel):
@@ -318,11 +271,5 @@ class FinalidadeEspecialResponse(BaseModel):
     area_politica_publica_pt: Optional[str]
 
 
-class PaginatedFinalidadeEspecialResponse(BaseModel):
-    model_config = ConfigDict(from_attributes=True) 
-
-    data: List[FinalidadeEspecialResponse]
-    total_pages: int
-    total_items: int
-    page_number: int
-    page_size: int
+class PaginatedFinalidadeEspecialResponse(PaginatedResponseTemplate):
+    data: List[FinalidadeEspecialResponse]   

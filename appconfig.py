@@ -60,3 +60,7 @@ class Settings(BaseSettings):
     ]
     DEFAULT_PAGE_SIZE: int = 10
     MAX_PAGE_SIZE: int = 200
+    ERROR_MESSAGE_NO_PARAMS: str = "Nenhum parâmetro de consulta foi informado."
+    ERROR_MESSAGE_INTERNAL: str = "Erro Interno Inesperado."
+    STATS_USER: str 
+    STATS_PASSWORD: str

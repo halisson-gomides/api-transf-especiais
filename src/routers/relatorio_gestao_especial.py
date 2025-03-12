@@ -1,15 +1,15 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedRelatorioGestaoEspecialResponse
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedRelatorioGestaoEspecialResponse
+from datetime import date
 from typing import Optional
-from appconfig import Settings
 from src.cache import cache
 
 rg_router = APIRouter(tags=["Relatório de Gestão Especial"])
-config = Settings()
+
 
 @rg_router.get("/relatorio_gestao_especial",
                 status_code=status.HTTP_200_OK,
@@ -46,11 +46,11 @@ async def consulta_relatorio_gestao_especial(
         )
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedRelatorioGestaoEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
     
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                            detail=f"Erro ao consultar Relatório de Gestão: {e.__repr__()}")
+                            detail=config.ERROR_MESSAGE_INTERNAL)

@@ -1,16 +1,15 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedEmpenhoEspecialResponse
-from typing import Optional
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedEmpenhoEspecialResponse
 from datetime import date
-from appconfig import Settings
+from typing import Optional
 from src.cache import cache
 
 em_router = APIRouter(tags=["Empenho Especial"])
-config = Settings()
+
 
 @em_router.get("/empenho_especial",
                 status_code=status.HTTP_200_OK,
@@ -99,12 +98,12 @@ async def consulta_empenho_especial(
 
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedEmpenhoEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
-
+    
     except Exception as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=e.__repr__())
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                            detail=config.ERROR_MESSAGE_INTERNAL)
     

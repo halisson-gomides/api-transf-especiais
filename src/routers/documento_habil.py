@@ -1,16 +1,15 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedDocumentoHabilEspecialResponse
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedDocumentoHabilEspecialResponse
 from datetime import date
 from typing import Optional
-from appconfig import Settings
 from src.cache import cache
 
 dh_router = APIRouter(tags=["Documento Hábil Especial"])
-config = Settings()
+
 
 @dh_router.get("/documento_habil_especial",
                 status_code=status.HTTP_200_OK,
@@ -84,11 +83,12 @@ async def consulta_documento_habil_especial(
         )
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedDocumentoHabilEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
 
     except Exception as e:
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=e.__repr__())
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
+            detail=config.ERROR_MESSAGE_INTERNAL)

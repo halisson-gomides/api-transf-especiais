@@ -1,15 +1,14 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedMetaEspecialResponse
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedMetaEspecialResponse
+from datetime import date
 from typing import Optional
-from appconfig import Settings
 from src.cache import cache
 
 me_router = APIRouter(tags=["Meta Especial"])
-config = Settings()
 
 
 @me_router.get("/meta_especial",
@@ -70,11 +69,11 @@ async def consulta_meta_especial(
         )
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedMetaEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
     
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                            detail=f"Erro ao consultar Plano de Trabalho: {e.__repr__()}")
+                            detail=config.ERROR_MESSAGE_INTERNAL)

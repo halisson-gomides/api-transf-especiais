@@ -1,15 +1,15 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedExecutorEspecialResponse
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedExecutorEspecialResponse
+from datetime import date
 from typing import Optional
-from appconfig import Settings
 from src.cache import cache
 
 ex_router = APIRouter(tags=["Executor Especial"])
-config = Settings()
+
 
 
 @ex_router.get("/executor_especial",
@@ -52,11 +52,11 @@ async def consulta_executor_especial(
         )        
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedExecutorEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
     
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                            detail=f"Erro ao consultar Plano de Trabalho: {e.__repr__()}")
+                            detail=config.ERROR_MESSAGE_INTERNAL)

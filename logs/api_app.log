@@ -1,0 +1,948 @@
+2025-03-10 12:55:15,904 - uvicorn.error - INFO - Will watch for changes in these directories: ['/workspaces/api-especiais']
+2025-03-10 12:55:15,910 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-03-10 12:55:15,913 - uvicorn.error - INFO - Started reloader process [9866] using WatchFiles
+2025-03-10 12:55:17,471 - watchfiles.main - DEBUG - 4 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__/database.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__/utils.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/__pycache__/appconfig.cpython-311.pyc')}
+2025-03-10 12:55:17,577 - uvicorn.error - INFO - Started server process [9868]
+2025-03-10 12:55:17,580 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 12:55:17,585 - main - INFO - Iniciando aplicação...
+2025-03-10 12:55:17,749 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 12:55:17,750 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 12:55:18,326 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:19,230 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:20,184 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:21,088 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:22,095 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:22,948 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:23,903 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 12:55:24,807 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:25,862 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:26,816 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:27,821 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:28,725 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:29,629 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:30,432 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:31,335 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:32,288 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:33,142 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 12:55:33,995 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:33,211 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:10:34,115 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:35,020 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:35,924 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:41,543 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:10:42,448 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:43,351 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:44,255 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:45,209 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:46,164 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:47,068 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:10:47,973 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:25,279 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:22:26,233 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:27,186 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:28,089 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:29,045 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:29,848 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:37,172 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:22:38,076 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:39,030 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:40,034 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:40,988 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:44,801 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:22:45,706 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:46,660 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:47,514 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:48,469 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:49,373 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:50,377 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:51,281 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:52,235 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:53,239 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:54,193 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:55,097 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:56,001 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:22:56,905 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:24:57,314 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:24:58,169 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:24:59,123 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:25:00,077 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:25:00,932 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:26:08,087 - uvicorn.error - INFO - Shutting down
+2025-03-10 13:26:08,188 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-10 13:26:08,192 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-10 13:26:08,193 - uvicorn.error - INFO - Finished server process [9868]
+2025-03-10 13:26:08,204 - uvicorn.error - INFO - Stopping reloader process [9866]
+2025-03-10 13:40:56,616 - uvicorn.error - INFO - Will watch for changes in these directories: ['/workspaces/api-especiais']
+2025-03-10 13:40:56,618 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-03-10 13:40:56,620 - uvicorn.error - INFO - Started reloader process [18631] using WatchFiles
+2025-03-10 13:42:15,933 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:42:15,937 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:42:16,892 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/__pycache__/main.cpython-311.pyc')}
+2025-03-10 13:42:17,659 - uvicorn.error - INFO - Started server process [18943]
+2025-03-10 13:42:17,661 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 13:42:17,662 - main - INFO - Iniciando aplicação...
+2025-03-10 13:42:17,695 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:17,781 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 13:42:17,782 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 13:42:18,447 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:19,200 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:20,052 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:20,956 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:22,611 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:42:23,564 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:24,517 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:25,472 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:26,476 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:27,430 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:28,434 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:29,387 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:30,291 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:31,295 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:32,248 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:33,203 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:34,157 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:35,111 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:36,065 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:37,018 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:42:37,972 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:55,676 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:42:55,678 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:42:55,684 - uvicorn.error - INFO - Shutting down
+2025-03-10 13:42:55,785 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-10 13:42:55,787 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-10 13:42:55,788 - uvicorn.error - INFO - Finished server process [18943]
+2025-03-10 13:42:56,548 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:57,503 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:58,457 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:42:59,410 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:00,414 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:01,367 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:02,422 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:03,276 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:04,179 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:05,183 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:43:05,186 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:43:06,191 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:07,195 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:08,098 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:09,001 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:10,005 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:10,959 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:11,863 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:43:11,864 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:43:12,768 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:13,672 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:14,575 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:15,479 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:43:15,480 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:43:16,485 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:17,390 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:18,244 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:43:18,245 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:43:19,199 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:43:19,200 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:43:20,055 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:21,009 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:21,912 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:23,718 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 13:43:23,720 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 13:43:24,573 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:24,925 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/__pycache__/main.cpython-311.pyc')}
+2025-03-10 13:43:25,293 - uvicorn.error - INFO - Started server process [19399]
+2025-03-10 13:43:25,295 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 13:43:25,296 - main - INFO - Iniciando aplicação...
+2025-03-10 13:43:25,421 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 13:43:25,422 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 13:43:25,478 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:29,642 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:43:30,646 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:31,551 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:32,505 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:33,408 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:34,362 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:35,317 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:36,222 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:37,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:38,180 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:39,185 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:40,138 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:41,092 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:42,096 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:42,899 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:57,142 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:43:58,046 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:43:58,949 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:44:06,071 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 13:44:07,024 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:44:07,929 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 13:46:10,165 - uvicorn.error - INFO - Shutting down
+2025-03-10 13:46:10,267 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-10 13:46:10,269 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-10 13:46:10,270 - uvicorn.error - INFO - Finished server process [19399]
+2025-03-10 13:46:10,278 - uvicorn.error - INFO - Stopping reloader process [18631]
+2025-03-10 13:59:56,495 - uvicorn.error - INFO - Will watch for changes in these directories: ['/workspaces/api-especiais']
+2025-03-10 13:59:56,498 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-03-10 13:59:56,499 - uvicorn.error - INFO - Started reloader process [1202] using WatchFiles
+2025-03-10 13:59:57,892 - uvicorn.error - INFO - Started server process [1204]
+2025-03-10 13:59:57,893 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 13:59:57,896 - main - INFO - Iniciando aplicação...
+2025-03-10 13:59:58,042 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 13:59:58,043 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 13:59:58,325 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:10,984 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:41:11,745 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:12,650 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:13,554 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:14,408 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:15,262 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:16,066 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:16,870 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:21,234 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:41:22,039 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:41:22,994 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:42:03,921 - uvicorn.error - INFO - Shutting down
+2025-03-10 14:42:04,025 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-10 14:42:04,030 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-10 14:42:04,033 - uvicorn.error - INFO - Finished server process [1204]
+2025-03-10 14:42:04,043 - uvicorn.error - INFO - Stopping reloader process [1202]
+2025-03-10 14:46:17,745 - uvicorn.error - INFO - Will watch for changes in these directories: ['/workspaces/api-especiais']
+2025-03-10 14:46:17,746 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-03-10 14:46:17,747 - uvicorn.error - INFO - Started reloader process [929] using WatchFiles
+2025-03-10 14:46:19,189 - uvicorn.error - INFO - Started server process [931]
+2025-03-10 14:46:19,191 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 14:46:19,194 - main - INFO - Iniciando aplicação...
+2025-03-10 14:46:19,320 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 14:46:19,322 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 14:46:19,991 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:46:30,879 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:46:31,116 - uvicorn.error - INFO - ('127.0.0.1', 59332) - "WebSocket /ws" [accepted]
+2025-03-10 14:46:31,118 - uvicorn.error - INFO - connection open
+2025-03-10 14:46:31,683 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:04,201 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:47:05,006 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:05,809 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:11,678 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:47:12,682 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:13,686 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:14,591 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:15,495 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:16,350 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:17,204 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:18,009 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:18,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:47:47,076 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:47:47,981 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:48:26,106 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:48:26,959 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:48:45,368 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:48:46,124 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:48:47,027 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:48:47,882 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:08,166 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:49:09,020 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:09,875 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:18,961 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:49:19,865 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:20,719 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:21,673 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:22,526 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:23,380 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:24,184 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:25,137 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:26,042 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:49:26,997 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:29,914 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:53:30,720 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:31,624 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:32,527 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:33,431 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:34,234 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:35,087 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:35,840 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:53:58,962 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:53:59,816 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:00,669 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:01,472 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:02,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:02,927 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:17,978 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:54:18,833 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:19,685 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:20,539 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:21,393 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:22,095 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:54:22,897 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:55:36,087 - uvicorn.error - INFO - connection closed
+2025-03-10 14:55:36,354 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:55:37,120 - uvicorn.error - INFO - ('127.0.0.1', 50160) - "WebSocket /ws" [accepted]
+2025-03-10 14:55:37,121 - uvicorn.error - INFO - connection open
+2025-03-10 14:55:37,207 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 14:55:42,397 - uvicorn.error - INFO - connection closed
+2025-03-10 14:55:42,877 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 14:55:43,066 - uvicorn.error - INFO - ('127.0.0.1', 47686) - "WebSocket /ws" [accepted]
+2025-03-10 14:55:43,067 - uvicorn.error - INFO - connection open
+2025-03-10 14:55:43,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:11:45,517 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:11:46,373 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:11:47,025 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:11:47,929 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:26,544 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:19:27,247 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:19:28,306 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:29,361 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:30,266 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:31,121 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:32,175 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:33,180 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:34,085 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:35,090 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:36,095 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:37,102 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:38,007 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:46,489 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:19:47,443 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:48,448 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:49,354 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:50,158 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:51,063 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:19:51,867 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:22:40,810 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:22:41,614 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:22:42,986 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:22:43,991 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:22:45,096 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:22:45,950 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:00,949 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:23:01,702 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:23:02,919 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:03,873 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:04,727 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:05,481 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:06,335 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:07,140 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:07,994 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:40,649 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/main.py')}
+2025-03-10 15:23:40,667 - uvicorn.error - WARNING - WatchFiles detected changes in 'main.py'. Reloading...
+2025-03-10 15:23:40,764 - uvicorn.error - INFO - Shutting down
+2025-03-10 15:23:40,771 - uvicorn.error - INFO - connection closed
+2025-03-10 15:23:40,869 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-10 15:23:40,873 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-10 15:23:40,874 - uvicorn.error - INFO - Finished server process [931]
+2025-03-10 15:23:41,554 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/__pycache__/main.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/__pycache__')}
+2025-03-10 15:23:42,257 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:42,666 - uvicorn.error - INFO - Started server process [11319]
+2025-03-10 15:23:42,667 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 15:23:42,668 - main - INFO - Iniciando aplicação...
+2025-03-10 15:23:42,790 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 15:23:42,791 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 15:23:43,061 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:43,915 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:52,243 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:23:52,864 - uvicorn.error - INFO - ('127.0.0.1', 42636) - "WebSocket /ws" [accepted]
+2025-03-10 15:23:52,866 - uvicorn.error - INFO - connection open
+2025-03-10 15:23:53,088 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:23:53,993 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:23:54,846 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:05,985 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:24:07,140 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:24:08,145 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:09,099 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:10,154 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:10,909 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:13,583 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:24:14,739 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:24:15,644 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:16,547 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:17,604 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:18,559 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:19,512 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:20,517 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:21,572 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:22,675 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:23,730 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:24,736 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:25,641 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:26,697 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:27,653 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:28,408 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:29,160 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:30,015 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:31,119 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:24:32,025 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:33,239 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:24:34,193 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:35,098 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:24:35,953 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:27:29,413 - uvicorn.error - INFO - connection closed
+2025-03-10 15:27:30,201 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:27:30,340 - uvicorn.error - INFO - ('127.0.0.1', 42872) - "WebSocket /ws" [accepted]
+2025-03-10 15:27:30,342 - uvicorn.error - INFO - connection open
+2025-03-10 15:27:30,805 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:32:59,316 - uvicorn.error - INFO - Shutting down
+2025-03-10 15:32:59,318 - uvicorn.error - INFO - connection closed
+2025-03-10 15:32:59,418 - uvicorn.error - INFO - Waiting for background tasks to complete. (CTRL+C to force quit)
+2025-03-10 15:32:59,620 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-10 15:32:59,622 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-10 15:32:59,623 - uvicorn.error - INFO - Finished server process [11319]
+2025-03-10 15:32:59,635 - uvicorn.error - INFO - Stopping reloader process [929]
+2025-03-10 15:44:51,243 - uvicorn.error - INFO - Will watch for changes in these directories: ['/workspaces/api-especiais']
+2025-03-10 15:44:51,245 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-03-10 15:44:51,246 - uvicorn.error - INFO - Started reloader process [17080] using WatchFiles
+2025-03-10 15:44:52,435 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__/utils.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__')}
+2025-03-10 15:44:52,799 - uvicorn.error - INFO - Started server process [17082]
+2025-03-10 15:44:52,801 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-10 15:44:52,804 - main - INFO - Iniciando aplicação...
+2025-03-10 15:44:52,920 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-10 15:44:52,921 - uvicorn.error - INFO - Application startup complete.
+2025-03-10 15:44:53,151 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:44:53,806 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:44:56,314 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:44:56,995 - uvicorn.error - INFO - ('127.0.0.1', 38760) - "WebSocket /ws" [accepted]
+2025-03-10 15:44:56,997 - uvicorn.error - INFO - connection open
+2025-03-10 15:44:57,218 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:44:58,071 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:44:59,026 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:44:59,829 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:07,100 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:45:08,214 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:45:09,218 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:10,122 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:11,126 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:11,931 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:15,730 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:45:16,814 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:45:17,818 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:18,721 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:19,625 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:20,528 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:21,533 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:22,438 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-10 15:45:24,066 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 15:45:24,822 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-10 17:14:40,087 - uvicorn.error - INFO - connection closed
+2025-03-12 21:15:40,151 - uvicorn.error - INFO - Will watch for changes in these directories: ['/workspaces/api-especiais']
+2025-03-12 21:15:40,154 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-03-12 21:15:40,156 - uvicorn.error - INFO - Started reloader process [5292] using WatchFiles
+2025-03-12 21:15:41,827 - watchfiles.main - DEBUG - 10 changes detected: {(<Change.deleted: 3>, '/workspaces/api-especiais/src/routers/__pycache__/historico_pagamento_especial.cpython-311.pyc.140245269658432'), (<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__/schemas.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/src/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/historico_pagamento_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/plano_acao_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/ordem_pagamento_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/empenho_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/programa_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/documento_habil.cpython-311.pyc')}
+2025-03-12 21:15:42,178 - uvicorn.error - INFO - Started server process [5294]
+2025-03-12 21:15:42,181 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-12 21:15:42,183 - main - INFO - Iniciando aplicação...
+2025-03-12 21:15:42,346 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-12 21:15:42,348 - uvicorn.error - INFO - Application startup complete.
+2025-03-12 21:15:42,882 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:43,236 - watchfiles.main - DEBUG - 6 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/relatorio_gestao_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/plano_trabalho_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/finalidade_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/meta_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/executor_especial.cpython-311.pyc')}
+2025-03-12 21:15:43,939 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:45,946 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-12 21:15:46,950 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:48,106 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:49,209 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:50,214 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:51,268 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:52,523 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:53,629 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:54,734 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:55,838 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:57,094 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:58,199 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:15:59,355 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:00,460 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:01,564 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:02,669 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:03,975 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:04,978 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:06,133 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:07,388 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:08,594 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:09,698 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:11,055 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:12,261 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:13,416 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:14,621 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:15,624 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:16,679 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:17,985 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:19,140 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:20,447 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:21,652 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:22,708 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:23,763 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:24,920 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:25,875 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:26,881 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:27,937 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:29,043 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:30,149 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:31,355 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:32,410 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:33,315 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:34,320 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:35,575 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:36,730 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:37,885 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:38,989 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:40,094 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:41,399 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:42,454 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:43,559 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:44,612 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:45,765 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:46,870 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:47,873 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:48,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:50,283 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:51,287 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:52,342 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:53,398 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:54,451 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:55,557 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:56,662 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:57,766 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:58,821 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:16:59,976 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:01,231 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:02,486 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:03,491 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:04,645 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:05,801 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:07,056 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:08,212 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:09,417 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:10,472 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:11,627 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:12,732 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:13,888 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:14,942 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:16,096 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:17,151 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:18,256 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:19,462 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:20,516 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:21,771 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:22,976 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:23,931 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:24,885 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:25,789 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:26,693 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:27,798 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:28,853 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:29,806 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:30,861 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:31,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:33,019 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:34,224 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:35,279 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:36,385 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:37,440 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:38,495 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:39,550 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:40,654 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:41,709 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:42,763 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:43,716 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:44,821 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:45,777 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:46,782 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:47,688 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:48,744 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:49,547 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:50,602 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:51,658 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:52,714 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:53,820 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:54,824 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:55,929 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:57,186 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:58,190 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:17:59,396 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:00,500 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:01,354 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:02,259 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:03,214 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:04,369 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:05,889 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:06,992 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:08,147 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:09,151 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:10,156 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:11,160 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:12,164 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:13,168 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:14,122 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:15,176 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:16,180 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:17,234 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:18,238 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:19,293 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:20,348 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:21,402 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:22,456 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:23,511 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:24,665 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:25,819 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:26,975 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:28,029 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:29,084 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:30,339 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:31,394 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:32,550 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:33,755 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:34,710 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:35,865 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:36,920 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:38,075 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:39,330 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:40,384 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:41,540 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:42,645 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:43,800 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:44,905 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:46,160 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:47,215 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:48,270 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:49,223 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:50,278 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:51,283 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:52,237 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:53,191 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:54,196 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:55,201 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:56,155 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:57,310 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:58,414 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:18:59,619 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:00,775 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:01,831 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:03,087 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:04,142 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:05,198 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:06,252 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:07,257 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:08,361 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:09,465 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:10,571 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:11,527 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:12,481 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:13,536 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:14,590 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:15,745 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:16,900 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:18,156 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:19,311 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:20,466 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:21,571 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:22,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:23,685 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:24,690 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:25,694 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:26,748 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:27,752 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:28,808 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:29,861 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:30,766 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:31,771 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:32,725 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:33,780 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:34,785 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:35,790 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:36,845 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:37,850 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:38,855 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:39,910 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:41,019 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:42,023 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:43,179 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:44,136 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:45,141 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:46,296 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:47,351 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:48,406 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:49,561 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:50,666 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:51,721 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:52,826 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:53,881 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:54,938 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:55,993 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:57,047 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:58,203 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:19:59,459 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:00,614 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:01,669 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:02,773 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:03,928 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:05,134 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:06,188 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:07,343 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:08,447 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:09,603 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:10,758 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:11,914 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:12,871 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:13,875 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:14,930 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:15,885 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:16,893 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:17,948 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:19,002 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:20,208 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:21,463 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:22,720 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:23,677 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:24,733 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:25,640 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:26,746 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:27,851 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:29,006 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:30,163 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:30,866 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:34,578 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-12 21:20:35,634 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:36,689 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:37,795 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:38,850 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:39,807 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:40,663 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:41,517 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:42,272 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:43,178 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:44,032 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:20:44,987 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:21:43,464 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/routers/programa_especial.py')}
+2025-03-12 21:21:43,469 - uvicorn.error - WARNING - WatchFiles detected changes in 'src/routers/programa_especial.py'. Reloading...
+2025-03-12 21:21:43,544 - uvicorn.error - INFO - Shutting down
+2025-03-12 21:21:43,647 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-12 21:21:43,649 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-12 21:21:43,650 - uvicorn.error - INFO - Finished server process [5294]
+2025-03-12 21:21:44,357 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:21:45,191 - uvicorn.error - INFO - Started server process [7021]
+2025-03-12 21:21:45,193 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-12 21:21:45,195 - main - INFO - Iniciando aplicação...
+2025-03-12 21:21:45,301 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-12 21:21:45,302 - uvicorn.error - INFO - Application startup complete.
+2025-03-12 21:21:45,511 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/programa_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:22:13,108 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-12 21:22:13,962 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:04,660 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-12 21:23:05,715 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:06,870 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:08,125 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:09,381 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:10,486 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:11,691 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:12,796 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:14,001 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:15,306 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:16,361 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:17,315 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:18,368 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:19,472 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:20,626 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:21,831 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:22,986 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:24,192 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:25,346 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:26,400 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:27,505 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:28,509 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:29,665 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:30,771 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:31,824 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:32,979 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:33,984 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:35,189 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:36,394 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:37,599 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:38,703 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:39,808 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:40,964 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:41,969 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:42,923 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:43,977 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:45,082 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:46,087 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:47,192 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:48,548 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:49,805 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:50,961 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:52,117 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:53,271 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:54,025 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:55,080 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:56,234 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:57,541 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:58,545 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:23:59,651 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:00,707 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:01,813 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:02,818 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:03,873 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:05,079 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:06,285 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:07,392 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:08,547 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:09,653 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:10,557 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/routers/programa_especial.py'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:10,559 - uvicorn.error - WARNING - WatchFiles detected changes in 'src/routers/programa_especial.py'. Reloading...
+2025-03-12 21:24:10,584 - uvicorn.error - INFO - Shutting down
+2025-03-12 21:24:10,687 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-12 21:24:10,689 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-12 21:24:10,691 - uvicorn.error - INFO - Finished server process [7021]
+2025-03-12 21:24:11,549 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:12,208 - uvicorn.error - INFO - Started server process [7672]
+2025-03-12 21:24:12,210 - uvicorn.error - INFO - Waiting for application startup.
+2025-03-12 21:24:12,212 - main - INFO - Iniciando aplicação...
+2025-03-12 21:24:12,310 - main - INFO - Aplicação iniciada com sucesso!
+2025-03-12 21:24:12,311 - uvicorn.error - INFO - Application startup complete.
+2025-03-12 21:24:12,402 - watchfiles.main - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__'), (<Change.modified: 2>, '/workspaces/api-especiais/src/routers/__pycache__/programa_especial.cpython-311.pyc'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:19,678 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-12 21:24:20,833 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:22,138 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:23,544 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:24,699 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:25,752 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:26,757 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:27,913 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:29,067 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:30,273 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:31,429 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:32,432 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:33,788 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:34,842 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:35,997 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:36,951 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:38,056 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:39,261 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:40,316 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:41,470 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:42,675 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:44,081 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:45,186 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:46,240 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:47,445 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:48,651 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:49,705 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:50,910 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:52,014 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:53,169 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:54,273 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:55,479 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:56,533 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:57,889 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:58,943 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:24:59,998 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:01,103 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:02,308 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:03,414 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:04,618 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:05,822 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:07,027 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:08,232 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:09,536 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:10,742 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:11,949 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:12,903 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:14,058 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:15,163 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:16,418 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:17,473 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:18,779 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:19,984 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:21,190 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:22,445 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:23,349 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:24,453 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:25,558 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:26,663 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:27,919 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:29,324 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:30,731 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:31,987 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:33,343 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:34,698 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:35,803 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:36,859 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:37,864 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:38,919 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:39,975 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:41,030 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:42,185 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:43,240 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:44,194 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:45,449 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:46,905 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:48,161 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:49,266 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:50,521 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:51,928 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:53,284 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:54,390 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:55,595 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:57,102 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:58,608 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:25:59,713 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:00,869 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:02,025 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:03,081 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:04,136 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:05,291 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:06,396 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:07,401 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:08,506 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:09,561 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:10,566 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:11,519 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:12,674 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:13,677 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:14,832 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:15,888 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:17,194 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:18,501 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:19,657 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:20,662 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:21,718 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:22,723 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:23,778 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:24,783 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:25,789 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:26,693 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:27,698 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:28,705 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:29,611 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:30,617 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:31,572 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:32,627 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:33,681 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:34,585 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:35,689 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:36,743 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:37,998 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:38,952 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:40,911 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log')}
+2025-03-12 21:26:42,166 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:43,322 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:44,376 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:45,381 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:46,386 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:47,442 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:48,445 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:49,499 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:50,554 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:51,609 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:52,613 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:53,767 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:54,974 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:55,928 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:56,983 - watchfiles.main - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_access.log'), (<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:58,138 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:26:59,446 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:00,552 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:01,758 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:02,712 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:03,766 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:04,770 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:05,573 - watchfiles.main - DEBUG - 1 change detected: {(<Change.modified: 2>, '/workspaces/api-especiais/logs/api_app.log')}
+2025-03-12 21:27:06,188 - uvicorn.error - INFO - Shutting down
+2025-03-12 21:27:06,291 - uvicorn.error - INFO - Waiting for application shutdown.
+2025-03-12 21:27:06,292 - uvicorn.error - INFO - Application shutdown complete.
+2025-03-12 21:27:06,293 - uvicorn.error - INFO - Finished server process [7672]
+2025-03-12 21:27:06,301 - uvicorn.error - INFO - Stopping reloader process [5292]

@@ -1,16 +1,16 @@
 from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlmodel import select, and_
+from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.cache import cache
-from src.schemas import PaginatedProgramaEspecialResponse
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedProgramaEspecialResponse
+from datetime import date
 from typing import Optional
-from appconfig import Settings
+from src.cache import cache
 
 
 prg_router = APIRouter(tags=["Programa Especial"])
-config = Settings()
+
 
 
 @prg_router.get("/programa_especial",
@@ -34,7 +34,7 @@ async def consulta_programa_especial(
     id_unidade_gestora_programa: Optional[int] = Query(None, description="Código da Unidade Gestora do Órgão do Programa"),
     documentos_origem_programa: Optional[str] = Query(None, 
                                                       description="Concatenação dos Códigos Únicos para Identificação dos Dados Financeiros Disponibilizados",
-                                                      pattern=r"^\d{4}[A-Z]{2}\d{5}(\s-\s\d{4}[A-Z]{2}\d{5})*$"),
+                                                      pattern=r"^\d{4}[A-Z]{2}\d{5}.*$"),
     id_unidade_orcamentaria_responsavel_programa: Optional[int] = Query(None, description="Identificador Único da Unidade Orçamentária Responsável pelo Programa"),
     data_inicio_ciencia_programa: Optional[str] = Query(None, description="Data de Início para o Registro de Ciência"),
     data_fim_ciencia_programa: Optional[str] = Query(None, description="Data Final para o Registro de Ciência"),
@@ -84,11 +84,11 @@ async def consulta_programa_especial(
         )
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedProgramaEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
-
+    
     except Exception as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=e.__repr__())
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                            detail=config.ERROR_MESSAGE_INTERNAL)

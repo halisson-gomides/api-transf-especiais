@@ -2,15 +2,14 @@ from fastapi import APIRouter, HTTPException, Depends, status, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlmodel import select, and_, cast, Date
 from src import models
-from src.utils import get_session, get_paginated_data
-from src.schemas import PaginatedHistoricoPagamentoEspecialResponse
+from src.utils import get_session, get_paginated_data, config
+from src.schemas import PaginatedResponseTemplate, PaginatedHistoricoPagamentoEspecialResponse
 from datetime import date
 from typing import Optional
-from appconfig import Settings
 from src.cache import cache
 
 hist_router = APIRouter(tags=["Histórico de Pagamento Especial"])
-config = Settings()
+
 
 @hist_router.get("/historico_pagamento_especial",
                 status_code=status.HTTP_200_OK,
@@ -49,11 +48,11 @@ async def consulta_historico_pagamento_especial(
         )
         result = await get_paginated_data(query=query,
                                           dbsession=dbsession,
-                                          response_schema=PaginatedHistoricoPagamentoEspecialResponse, 
+                                          response_schema=PaginatedResponseTemplate, 
                                           current_page=pagina, 
                                           records_per_page=tamanho_da_pagina)
         return result
     
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                            detail=f"Erro ao consultar Histórico de Pagamento: {e.__repr__()}")
+                            detail=config.ERROR_MESSAGE_INTERNAL)
