@@ -2,7 +2,7 @@ from sqlmodel import Field, SQLModel, Relationship
 import datetime as dt
 from typing import List, Optional
 
-db_schema = 'api_transferegov_transferenciasespeciais'
+db_schema = 'api_transferegov_especiais'
 
 class BaseModel(SQLModel, table=False):
     """Base class for all SQLModel subclasses"""
