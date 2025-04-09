@@ -109,7 +109,7 @@ app = FastAPI(lifespan=lifespan,
               default_response_class=ORJSONResponse,              
               root_path=ROOTPATH,
               swagger_ui_parameters={"defaultModelExpandDepth": -1})
-# app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount(f"{ROOTPATH}/static", StaticFiles(directory="static"), name="static_prefixed")
 
 # Incluindo Middlewares
